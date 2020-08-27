@@ -1,0 +1,38 @@
+.tesla-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 10000;
+
+  &__logo {
+    @include respond(tab-port) {
+      align-self: flex-start;
+    }
+    img {
+      object-fit: contain;
+      height: 20px;
+    }
+  }
+
+  &__models {
+    &-list {
+      display: flex;
+      @include respond(tab-port) {
+        flex-direction: column;
+      }
+
+      li {
+        margin: 0 10px;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 600;
+        font-size: .8em;
+      }
+    }
+  }
+}
