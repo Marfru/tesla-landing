@@ -1,9 +1,17 @@
 import React from 'react';
 import { modelsData } from '../../mock/data';
 import Logo from '../../images/tesla.png';
+import { Link } from 'react-scroll';
 
 const menu = modelsData.map(menuItem =>
-    <li>{menuItem.menu}</li>
+    <li><Link
+      to={menuItem.id}
+      smooth={true}
+      duration={600}
+      spy={true}
+      activeClass='active'
+    >{menuItem.menu}</Link>
+    </li>
 );
 
 function Header() {

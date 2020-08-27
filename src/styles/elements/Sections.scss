@@ -4,6 +4,9 @@
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 
   &__info {
     margin-top: 150px;
@@ -16,8 +19,17 @@
     }
     label {
       margin-top: 2rem;
-      font-size: 0.9rem;
       color: #393C41;
+      @include respond(phone) {
+        font-size: 0.9rem;
+      }
+
+      a {
+        color: #393C41;
+        &:hover {
+          font-weight: 500;
+        }
+      }
       @include respond(phone) {
         font-size: 0.9rem;
       }

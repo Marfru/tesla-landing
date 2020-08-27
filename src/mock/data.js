@@ -1,5 +1,6 @@
 export const modelsData = [
   {
+    id: 'modely',
     title: 'Model Y',
     menu: 'Model Y',
     subtitle: 'Order online for',
@@ -9,6 +10,7 @@ export const modelsData = [
     img: require('../images/modely.jpeg'),
   },
   {
+    id: 'modelx',
     title: 'Model X',
     menu: 'Model X',
     subtitle: 'Order online for',
@@ -18,6 +20,7 @@ export const modelsData = [
     img: require('../images/modelx.jpeg')
   },
   {
+    id: 'model3',
     title: 'Model 3',
     menu: 'Model 3',
     subtitle: 'Order online for',
@@ -27,6 +30,7 @@ export const modelsData = [
     img: require('../images/model3.jpeg')
   },
   {
+    id: 'models',
     title: 'Model S',
     menu: 'Model S',
     subtitle: 'Order online for',
@@ -36,6 +40,7 @@ export const modelsData = [
     img: require('../images/models.jpeg')
   },
   {
+    id: 'panels',
     title: 'Only $1.49/Watt for Solar on Existing Roofs',
     menu: 'Solar Panels',
     subtitle: 'Lowest Cost in America - Money-back guarantee',
@@ -44,6 +49,7 @@ export const modelsData = [
     img: require('../images/house.jpeg')
   },
   {
+    id: 'roof',
     title: 'Solar for New Roofs',
     menu: 'Solar Roof',
     subtitle: 'Solar Roof Costs Less Than a New Roof Plus Solar Panels',

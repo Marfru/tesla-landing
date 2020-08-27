@@ -1,9 +1,9 @@
 import React from 'react';
-import ReactPageScroller from 'react-page-scroller';
 import { modelsData } from '../../mock/data';
 
+
 const content = modelsData.map(item =>
-  <section className="section" style={{backgroundImage: `url(${item.img})`, backgroundSize: 'cover', backgroundRepeat: 'no-repeat', backgroundPosition: 'center'}}>
+  <section id={item.id} className="section" style={{backgroundImage: `url(${item.img})`}}>
     <div className="section__info">
       <h1>{item.title}</h1>
       <label>{item.subtitle} <a href="#">{item.link}</a></label>
@@ -17,9 +17,9 @@ const content = modelsData.map(item =>
 
 function Section() {
   return (
-    <ReactPageScroller>
+    <div>
       { content }
-    </ReactPageScroller>
+    </div>
   )
 }
 

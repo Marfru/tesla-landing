@@ -6,6 +6,10 @@
   list-style: none;
   font-family: 'Montserrat', sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+
 @import './helpers/mixins.scss';
 @import './layouts/Header.scss';
 @import './elements/Sections.scss';
