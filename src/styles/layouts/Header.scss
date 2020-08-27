@@ -9,6 +9,11 @@
   right: 0;
   z-index: 10000;
 
+  @include respond(phone) {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
   &__logo {
     @include respond(tab-port) {
       align-self: flex-start;
@@ -20,10 +25,15 @@
   }
 
   &__models {
+    overflow-x: auto;
+    overflow-y: scroll;
+    width: 100%;
     &-list {
       display: flex;
       @include respond(tab-port) {
-        flex-direction: column;
+        align-items: flex-start;
+        margin-top: 13px;
+        margin-left: -5px;
       }
 
       li {
