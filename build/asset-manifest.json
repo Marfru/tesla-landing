@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.e1019cbd.chunk.css",
+    "main.js": "/static/js/main.402f9a9e.chunk.js",
+    "main.js.map": "/static/js/main.402f9a9e.chunk.js.map",
+    "runtime-main.js": "/static/js/runtime-main.831a919c.js",
+    "runtime-main.js.map": "/static/js/runtime-main.831a919c.js.map",
+    "static/js/2.c45dfd8d.chunk.js": "/static/js/2.c45dfd8d.chunk.js",
+    "static/js/2.c45dfd8d.chunk.js.map": "/static/js/2.c45dfd8d.chunk.js.map",
+    "index.html": "/index.html",
+    "precache-manifest.57f03e6d0c0434386d8605c31b8670a9.js": "/precache-manifest.57f03e6d0c0434386d8605c31b8670a9.js",
+    "service-worker.js": "/service-worker.js",
+    "static/css/main.e1019cbd.chunk.css.map": "/static/css/main.e1019cbd.chunk.css.map",
+    "static/js/2.c45dfd8d.chunk.js.LICENSE.txt": "/static/js/2.c45dfd8d.chunk.js.LICENSE.txt",
+    "static/media/house.jpeg": "/static/media/house.a1e04a41.jpeg",
+    "static/media/model3.jpeg": "/static/media/model3.a162e56c.jpeg",
+    "static/media/models.jpeg": "/static/media/models.4e53f69f.jpeg",
+    "static/media/modelx.jpeg": "/static/media/modelx.99280c76.jpeg",
+    "static/media/modely.jpeg": "/static/media/modely.e2b44db2.jpeg",
+    "static/media/solar.jpeg": "/static/media/solar.fe70c48e.jpeg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.831a919c.js",
+    "static/js/2.c45dfd8d.chunk.js",
+    "static/css/main.e1019cbd.chunk.css",
+    "static/js/main.402f9a9e.chunk.js"
+  ]
+}
