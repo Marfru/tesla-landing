@@ -7,17 +7,9 @@
   top: 0;
   left: 0;
   right: 0;
-  z-index: 10000;
-
-  @include respond(phone) {
-    align-items: flex-start;
-    flex-direction: column;
-  }
+  z-index: 100;
 
   &__logo {
-    @include respond(tab-port) {
-      align-self: flex-start;
-    }
     img {
       object-fit: contain;
       height: 20px;
@@ -27,9 +19,12 @@
   &__models {
     overflow-x: auto;
     overflow-y: scroll;
-    width: 100%;
+    @include respond(tab-port) {
+      display: none;
+    }
     &-list {
       display: flex;
+      padding: 1rem 0;
       @include respond(tab-port) {
         align-items: flex-start;
         margin-top: 13px;
@@ -47,6 +42,55 @@
         a.active {
           border-bottom: 2px solid #000;
         }
+      }
+    }
+  }
+
+  &__icon {
+    cursor: pointer;
+    display: none !important;
+    @include respond(phone) {
+      display: block !important;
+    }
+    @include respond(tab-port) {
+      display: block !important;
+    }
+  }
+
+  &__mobile {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    position: fixed;
+    width: 30%;
+    transform: translateX(100%);
+    top: 0;
+    right: 0;
+    background-color: #fff;
+    height: 100%;
+    transition: transform 0.3s ease-in-out;
+    @include respond(tab-port) {
+      width: 45%;
+    }
+    @include respond(phone) {
+      width: 75%;
+    }
+    &--open {
+      transform: translateX(0%);
+    }
+    &-list {
+      margin: 5rem 0;
+      width: 100%;
+
+      li {
+        margin: 2rem 0;
+        padding: 1rem 0;
+        cursor: pointer;
+        border-bottom: 2px solid #D3D3D3;
+        text-transform: uppercase;
+        color: #000;
+        font-weight: 600;
+        font-size: .8em;
       }
     }
   }
